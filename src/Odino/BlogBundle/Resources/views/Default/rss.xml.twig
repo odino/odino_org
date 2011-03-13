@@ -1,0 +1,20 @@
+{{ '<?xml version="1.0" encoding="utf-8"?>' }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alessandro Nadalin: php and agile development</title>
+  <subtitle>Latest blog posts</subtitle>
+  <link href="{{ url('homepage') }}" rel="self"/>
+  <link href="{{ url('homepage') }}"/>
+  <updated></updated>
+  <author><name>Alessandro Nadalin</name></author>
+  <id>1</id>
+
+  {% for content in contents %}
+  <entry>
+    <title>{{ content.title }}</title>
+    <link href="{{ path('content', { 'id': content.id, 'slug': content.slug }) }}" />
+    <id>{{ content.id }}</id>
+    <updated>{{ content.publishedAt | date }}</updated>
+    <summary>{{ content.intro }}</summary>
+  </entry>
+  {% endfor %}
+</feed>

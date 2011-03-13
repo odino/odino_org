@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Alessandro Nadalin{% endblock %}</title>
+        <meta name='description' content='{% block description %}Alessandro Nadalin{% endblock %}' />
+        <meta name='keywords' content='{% block keywords %}Alessandro Nadalin{% endblock %}' />
+        {% block stylesheets %}{% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type='text/css' href="{{ asset('css/main.css') }}" />
+        <link rel="alternate" type="application/rss+xml" title="Feed RSS"  href="http://www.odino.org/rss" />
+        <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="dSNHLHJFQzKASjN8qHJisk2XLkKqbF_ilGSj9bscwKs" />
+        <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

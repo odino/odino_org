@@ -1,0 +1,13 @@
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-13T14:28:01+01:00 ERR: No route found for /dsafvs
+2011-03-13T14:28:01+01:00 ERR: Unable to look for the controller as the "_controller" parameter is missing
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleException" (notifyUntil)
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Component\HttpKernel\Debug\ExceptionListener::handle" (notifyUntil)
+2011-03-13T14:28:01+01:00 ERR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: Unable to find the controller for path "/dsafvs". Maybe you forgot to add the matching route in your routing configuration? (uncaught exception)
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-13T14:28:01+01:00 INFO: Using controller "Odino\BlogBundle\Controller\ExceptionController::exceptionAction"
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ControllerAnnotationParser::filter" (filter)
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverterListener::filter" (filter)
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleException" (notifyUntil)
+2011-03-13T14:28:01+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Component\HttpKernel\Debug\ExceptionListener::handle" (notifyUntil)
+2011-03-13T14:28:01+01:00 ERR: Exception thrown when handling an exception (ReflectionException: Class Odino\BlogBundle\Controller\FlattenException does not exist)

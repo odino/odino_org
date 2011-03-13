@@ -1,0 +1,31 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{title}}{% endblock %}
+{% block description %}{{description}}{% endblock %}
+{% block keywords %}{{keywords}}{% endblock %}
+
+{% block body %}
+<h1>
+    Conferences
+</h1>
+
+{% render 'OdinoBlogBundle:Blog:menu' with {}, {'standalone': true} %}
+
+
+<div class="body">
+  <p>
+    I've spoken in a few conferences in the last years: if you want to see my presentations you'd better visit my <a href='http://www.slideshare.net/odino'>slideshare account</a>.
+  </p>
+  <p>
+    Here's a summary of the most important ones:
+    <ul>
+      <li><a href='http://www.slideshare.net/odino/rest-in-peace-codemotion-2011'>REST in peace</a>, given at the Codemotion 2011 in Rome (ITA), dealing with RESTful architectures and advanced gateway caching with the ESI technology</li><br />
+      <li><a href='http://www.slideshare.net/odino/approaching-unknown-unknowns-cmf-for-the-masses'>CMF for the masses</a>, given in 2010 at the Rome PHP User Group (ITA), explaining a CMF design case we faced in our company</li><br />
+      <li><a href='http://www.slideshare.net/odino/magentophpday'>Magento++</a>, given at the PHPDay 2010 in Teramo (ITA), about the e-commerce PHP platform Magento</li><br />
+      <li><a href='http://www.slideshare.net/odino/bettersoftwareslides'>OS business models</a>, given at the BetterSoftware 2010 in Florence (ITA), in which I explained some business models real-world OS companies successfully adopted</li><br />
+      <li><a href='http://www.slideshare.net/odino/whats-new-in-joomla-16'>What's new in Joomla! 1.6?</a>, given at the PHPDay 2009 in Verone (ITA), dealing with the new release of the Joomla! CMS</li><br />
+    </ul>
+  </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{title}}{% endblock %}
+{% block description %}{{description}}{% endblock %}
+{% block keywords %}{{keywords}}{% endblock %}
+
+{% block body %}
+<h1>
+    About
+</h1>
+
+{% render 'OdinoBlogBundle:Blog:menu' with {}, {'standalone': true} %}
+
+<div class="body">
+  <p>
+    I like to play with the <a href='http://symfony-project.org'>symfony framework</a>, <a href='http://www.php.net'>PHP</a> and <a href='http://www.extremeprogramming.org'>extreme programming</a>. I also <a href='https://github.com/odino/Resi' >wrote a few lines</a> in Ruby.
+  </p>
+  <p>
+    Far from being a <i>real</i> (or decent) coach, I love to share my experience and thoughts about agile development with colleagues as much as I love being attendee or speaker at some conferences across both Italy and Europe.
+  </p>
+  <p>
+    I like being involved in discussions about (web)architectures design, and I do <b>really</b> love the REST architectural style.
+  </p>
+  <p>
+    I'm currently living in Rome where I am employed for <a href='http://www.dnsee.com'>Interactive Thinking s.r.l</a>, also known as DNSEE.
+  </p>
+  <p>
+    In the spare time, biker and drummer.
+  </p>
+  <p style='text-align:center;'>
+    <img src='{{ asset('/media/alex.jpg') }}' />
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{title}}{% endblock %}
+{% block description %}{{description}}{% endblock %}
+{% block keywords %}{{keywords}}{% endblock %}
+
+{% block body %}
+<h1>
+    <a href='{{ path('tags') }}' >
+        Tag cloud{% if tag is not empty %}: {{ tag }}{% endif %}
+    </a>
+</h1>
+
+{% render 'OdinoBlogBundle:Blog:menu' with {}, {'standalone': true} %}
+
+{% for content in contents %}
+<div class="article_listed">
+    <h2>
+        <a href="{{ path('content', { 'id': content.id, 'slug': content.slug }) }}">
+            {{ content.title }}
+        </a>
+    </h2>
+    <div class="date">
+          {{ content.publishedAt | date('l, jS F Y') }}
+    </div>
+
+    <div class='intro'>
+        {{ content.intro }}
+    </div>
+</div>
+{% endfor %}
+
+<div class='cloud'>
+{% for tag, count in tags %}
+<span style='font-size: {{ count*2 + 10 }}px'>
+  <a href='{{ path('tags', { 'tag': tag }) }}'>
+    {{ tag }}
+  </a>
+</span>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,153 @@
+*
+{
+  border: 0;
+}
+
+
+
+body
+{
+  margin: 25px auto 0 auto;
+  width: 780px;
+  font-family: Tinos, Georgia, Times New Roman, serif;
+  font-size: 18px;
+}
+
+h1
+{
+  font-weight: normal;
+  margin-bottom: 30px;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+h2
+{
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.body h2
+{
+  text-align:  left;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+h2 a:link, h2 a:hover
+{
+  color: #111;
+}
+
+h2 a:hover
+{
+  text-decoration: underline;
+}
+
+a:link, a:visited
+{
+  color:  #111111;
+  text-decoration: none;
+}
+
+div.article_listed
+{
+  padding: 25px 0 0 0;
+}
+
+div.date
+{
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  color:      #525252;
+  padding:    5px 0 0 0;
+}
+
+div.pager
+{
+  padding:  20px 0 0 0;
+  text-align: center;
+}
+
+a.pager:link, a.pager:visited
+{
+  padding:  5px;
+}
+
+.activePage
+{
+  background: #111;
+  color: #ffffff;
+}
+
+
+a.activePage
+{
+  background: #111;
+  color: #ffffff;
+}
+
+.code
+{
+  background:   #111;
+  color:        #fff;
+  padding:      10px;
+  font-size:    11px;
+  font-family:  Courier;
+  font-size:    14px;
+}
+
+.body a:link, .body a:visited
+{
+  text-decoration: underline;
+}
+
+.utils
+{
+  padding:  20px 0 15px 0;
+}
+
+.utils a:link, .utils a:visited
+{
+  color:  #525252;
+}
+
+.prev
+{
+  text-align: left;
+}
+
+.next
+{
+  text-align: right;
+  float:      right;
+}
+
+.middle
+{
+  text-align: center;
+}
+
+.intro
+{
+  text-align: center;
+  padding:  20px 0 20px 0;
+}
+
+.rss
+{
+  text-align: center;
+}
+
+.rss a:link, .rss a:visited
+{
+  color:      #9a9a9a;
+  padding: 7px;
+}

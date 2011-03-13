@@ -1,0 +1,7 @@
+blog:
+    resource: "@OdinoBlogBundle/Controller/BlogController.php"
+    type:     annotation
+
+_internal:
+    resource: @FrameworkBundle/Resources/config/routing/internal.xml
+    prefix:   /_internal

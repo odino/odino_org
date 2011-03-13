@@ -1,0 +1,40 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}{{title}}{% endblock %}
+{% block description %}{{description}}{% endblock %}
+{% block keywords %}{{keywords}}{% endblock %}
+
+{% block body %}
+<h1>
+    <a href='{{ path('homepage') }}' >
+        Alessandro Nadalin
+    </a>
+</h1>
+
+{% render 'OdinoBlogBundle:Blog:menu' with {}, {'standalone': true} %}
+
+{% for content in contents %}
+<div class="article_listed">
+    <h2>
+        <a href="{{ path('content', { 'id': content.id, 'slug': content.slug }) }}">
+            {{ content.title }}
+        </a>
+    </h2>
+    <div class="date">
+          {{ content.publishedAt | date('l, jS F Y') }}
+    </div>
+
+    <div class='intro'>
+        {{ content.intro }}
+    </div>
+</div>
+{% endfor %}
+
+<div class='pager'>
+    {% for i in 1..pages %}
+        <a href="{{ path('homepage', { 'page': i }) }}" class="pager{% if page == i %}{{ ' activePage' }}{% endif %}">
+            {{ i }}
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

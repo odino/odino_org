@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Content not found{% endblock %}
+
+{% block body %}
+<h1>
+    Alessandro Nadalin
+</h1>
+
+{% render 'OdinoBlogBundle:Blog:menu' with {}, {'standalone': true} %}
+
+<div class="body">
+    <h1 style='color:#cc0033'>
+        Ooops, content not found
+    </h1>
+    <p align='center'>
+        Embarassing, man.
+    </p>
+    <p align='center'>
+        If you were looking for something you can't live without, don't hesitate
+        mailing me at <br /><i>alessandro dot nadalin at thegooglemailprovider dot com</i>
+    </p>
+</div>
+{% endblock %}
